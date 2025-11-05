@@ -1,0 +1,4 @@
+eval "$(starship init zsh)"
+eval "$(sheldon source)"
+
+alias ls="eza --icons --git"
