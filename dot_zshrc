@@ -1,4 +1,13 @@
-eval "$(starship init zsh)"
+export EDITOR="nvim"
+
+export HISTFILE=~/.zsh_history
+export HISTSIZE=10000
+export SAVEHIST=10000
+
+setopt SHARE_HISTORY 
+setopt APPEND_HISTORY 
+setopt INC_APPEND_HISTORY
+
 eval "$(sheldon source)"
 
 autoload -Uz compinit
@@ -7,4 +16,4 @@ compinit
 alias ls="eza --icons --git"
 alias lg="lazygit"
 
-export EDITOR="nvim"
+eval "$(starship init zsh)"
