@@ -5,5 +5,6 @@ autoload -Uz compinit
 compinit
 
 alias ls="eza --icons --git"
+alias lg="lazygit"
 
 export EDITOR="nvim"
