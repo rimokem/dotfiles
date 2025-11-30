@@ -1,6 +1,9 @@
 eval "$(starship init zsh)"
 eval "$(sheldon source)"
 
+autoload -Uz compinit
+compinit
+
 alias ls="eza --icons --git"
 
 export EDITOR="nvim"
