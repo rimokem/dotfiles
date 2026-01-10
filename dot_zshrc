@@ -16,7 +16,6 @@ alias ls="eza --icons --git"
 alias lg="lazygit"
 
 eval "$(starship init zsh)"
-eval "$(fnm env --use-on-cd --shell zsh)"
 
 export PATH="$HOME/.cargo/bin:$PATH"
 
