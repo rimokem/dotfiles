@@ -1,0 +1,35 @@
+snippets:
+  # --- Arch Linux (Pacman) ---
+  - name: pacman update
+    keyword: syu
+    snippet: sudo pacman -Syu
+  - name: pacman install
+    keyword: pin
+    snippet: sudo pacman -S
+  - name: pacman remove
+    keyword: prm
+    snippet: sudo pacman -Rs
+
+  # --- Git ---
+  - name: git status
+    keyword: gs
+    snippet: git status --short --branch
+  - name: git add all
+    keyword: ga
+    snippet: git add .
+  - name: git commit
+    keyword: gc
+    snippet: git commit -m ""
+  - name: git switch
+    keyword: gsw
+    snippet: git switch
+
+  # --- ユーティリティ ---
+  - name: docker compose
+    keyword: dco
+    snippet: docker compose
+  - name: null redirect
+    keyword: null
+    snippet: "> /dev/null 2>&1"
+    context:
+      global: true # 行の途中や末尾でも展開可能にする
