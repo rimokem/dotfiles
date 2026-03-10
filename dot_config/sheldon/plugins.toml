@@ -30,3 +30,13 @@ apply = ["defer"]
 [plugins.zsh-autopair]
 github = "hlissner/zsh-autopair"
 apply = ["defer"]
+
+[plugins.zeno]
+github = "yuki-yano/zeno.zsh"
+hooks.post = '''
+  if [[ -n $ZENO_LOADED ]]; then
+    bindkey ' '  zeno-auto-snippet
+    bindkey '^m' zeno-auto-snippet-and-accept-line
+    bindkey '^i' zeno-completion-fallback
+  fi
+'''
