@@ -14,6 +14,7 @@ compinit
 
 alias ls="eza --icons --git"
 alias lg="lazygit"
+alias oc="opencode"
 
 eval "$(starship init zsh)"
 
